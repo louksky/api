@@ -10,7 +10,7 @@ from .models import Messeages_H
 
 @api_view(['GET'])
 def api_views(request):
-	api_urls = {
+	api_routes = {
 
 		'API please login '
 		'Write message':'/msg-write/',
@@ -33,7 +33,9 @@ def api_views(request):
 		}
 		}
 
-	return Response(api_urls)
+	return Response(api_routes)
+
+
 #create/write view
 @api_view(['POST'])
 def msg_write(request):
