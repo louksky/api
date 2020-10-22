@@ -13,11 +13,12 @@ def api_views(request):
 	api_routes = {
 
 		'API please login '
-		'Write message':'/msg-write/',
-		'Get all messages of logged user':'msg-list',
-		'Get all unread messages of logged user':'un-msg-list',
-		'Read one message':'msg-read/id/',
-		'Delete one message':'msg-delete/id/',
+		'Login/Admin':'/admin',
+		'Write message':'/msg-write',
+		'Get all messages of logged user':'/msg-list',
+		'Get all unread messages of logged user':'/un-msg-list',
+		'Read one message':'/msg-read/id',
+		'Delete one message':'/msg-delete/id',
 
 		'EXAMPLE : ':{
 			
